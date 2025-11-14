@@ -64,10 +64,22 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="primary" size="lg">
+              <Button 
+                variant="primary" 
+                size="lg"
+                onClick={() => {
+                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Explore Our Research
               </Button>
-              <Button variant="outline" size="lg">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => {
+                  window.location.href = 'mailto:info@quant-ai-research.com?subject=Contact Request&body=Hi, I would like to get in touch with your team.';
+                }}
+              >
                 Contact Us
               </Button>
             </div>
