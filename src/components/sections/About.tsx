@@ -26,7 +26,7 @@ const values = [
 
 export default function About() {
   return (
-    <section className="section-padding bg-zinc-950 relative overflow-hidden">
+    <section className="section-padding bg-transparent relative overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,217,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,217,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px]" />
       

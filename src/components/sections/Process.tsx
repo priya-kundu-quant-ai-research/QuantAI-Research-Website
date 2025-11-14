@@ -80,7 +80,7 @@ export default function Process() {
   };
 
   return (
-    <section className="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-black relative overflow-hidden">
+    <section className="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-transparent relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-20 left-1/4 w-96 h-96 bg-cyan-400/5 rounded-full blur-[120px]" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-[120px]" />
@@ -186,13 +186,14 @@ export default function Process() {
             Ready to leverage our research expertise?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
-              className="px-8 py-3 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-colors shadow-[0_0_20px_rgba(0,217,255,0.4)]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Schedule a Consultation
-            </motion.button>
+          <motion.a
+            href="mailto:info@quant-ai-research.com?subject=Consultation Request&body=Hi, I would like to schedule a consultation to discuss your research services."
+            className="px-8 py-3 bg-cyan-400 text-black font-semibold rounded-lg hover:bg-cyan-300 transition-colors shadow-[0_0_20px_rgba(0,217,255,0.4)] inline-block"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Schedule a Consultation
+          </motion.a>
             {/* <motion.button
               className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400 hover:text-black transition-colors"
               whileHover={{ scale: 1.05 }}

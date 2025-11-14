@@ -111,7 +111,7 @@ function TeamCard({ member, size = "normal" }: { member: typeof team[0]; size?: 
 
 export default function Team() {
   return (
-    <section className="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-black relative overflow-hidden">
+    <section className="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-transparent relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-10 right-10 w-72 h-72 bg-cyan-400/5 rounded-full blur-[100px]" />
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-purple-500/5 rounded-full blur-[100px]" />

@@ -76,7 +76,7 @@ export default function Research() {
   };
 
   return (
-    <section className="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-zinc-950 relative overflow-hidden">
+    <section className="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-transparent relative overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,217,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,217,255,0.02)_1px,transparent_1px)] bg-size-[50px_50px]" />
       
