@@ -83,8 +83,8 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Address</p>
                   <p className="text-white">
-                    516 Herkimer St 3A<br />
-                    Brooklyn, NY 11213
+                    7014 13th Ave Ste 202<br />
+                    Brooklyn, NY 11228
                   </p>
                 </div>
               </div>
