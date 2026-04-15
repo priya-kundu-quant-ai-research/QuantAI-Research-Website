@@ -14,21 +14,21 @@ const team = [
   {
     name: "Priya Kundu",
     role: "Product Manager",
-    bio: "Drives product strategy and development roadmap. Expert in translating complex financial requirements into scalable technology solutions.",
+    bio: "Drives strategy and development roadmap. Expert in translating complex requirements into scalable technology solutions.",
     linkedin: "https://www.linkedin.com/in/priyakundu159/",
   },
   {
     name: "Nachiket Khare",
     role: "Data Engineer",
-    bio: "Specializes in building robust data pipelines and infrastructure. Ensures seamless integration of alternative data sources for analysis.",
+    bio: "Specializes in building robust data pipelines and infrastructure. Ensures seamless integration of data sources for analysis.",
     linkedin: "https://www.linkedin.com/in/nachiket-khare-4298201ab/",
   },
-  {
-    name: "Nikhil Soni",
-    role: "AI Engineer",
-    bio: "Develops cutting-edge machine learning models and LLM orchestration for financial prediction. Focusing on AI applications in quantitative finance.",
-    linkedin: "https://www.linkedin.com/in/nikhilsoni15/",
-  },
+  // {
+  //   name: "Nikhil Soni",
+  //   role: "AI Engineer",
+  //   bio: "Develops cutting-edge machine learning models and LLM orchestration for financial prediction. Focusing on AI applications in quantitative finance.",
+  //   linkedin: "https://www.linkedin.com/in/nikhilsoni15/",
+  // },
   {
     name: "Avina",
     role: "Software Engineer",
@@ -146,9 +146,14 @@ export default function Team() {
           </motion.div>
 
           {/* Team Members - 4 Column Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+          <div className="flex flex-wrap justify-center gap-4 pt-4">
             {team.map((member, index) => (
-              <TeamCard key={index} member={member} size="normal" />
+              <div
+                key={index}
+                className="flex-none w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
+              >
+                <TeamCard member={member} size="normal" />
+              </div>
             ))}
           </div>
         </motion.div>

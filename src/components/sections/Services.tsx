@@ -6,17 +6,17 @@ import { Database, TrendingUp, PieChart } from "lucide-react";
 import { MouseEvent } from "react";
 
 const services = [
-  {
-    icon: Database,
-    title: "Blockchain Research",
-    description:
-      "From decentralized finance (DeFi) protocols to the tokenization of real-world assets, our in-depth blockchain research provides clarity in a rapidly evolving ecosystem. We analyze on-chain data, evaluate protocol risk, and identify emerging opportunities in the digital asset space.",
-    color: "cyan",
-    iconBg: "bg-cyan-400",
-    iconColor: "text-black",
-    borderColor: "border-cyan-400",
-    glowColor: "shadow-[0_0_30px_rgba(0,217,255,0.3)]",
-  },
+  // {
+  //   icon: Database,
+  //   title: "Blockchain Research",
+  //   description:
+  //     "From decentralized finance (DeFi) protocols to the tokenization of real-world assets, our in-depth blockchain research provides clarity in a rapidly evolving ecosystem. We analyze on-chain data, evaluate protocol risk, and identify emerging opportunities in the digital asset space.",
+  //   color: "cyan",
+  //   iconBg: "bg-cyan-400",
+  //   iconColor: "text-black",
+  //   borderColor: "border-cyan-400",
+  //   glowColor: "shadow-[0_0_30px_rgba(0,217,255,0.3)]",
+  // },
   {
     icon: TrendingUp,
     title: "Algorithmic Trading Research",
@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: PieChart,
-    title: "Portfolio Optimization Research",
+    title: "Portfolio Optimization",
     description:
       "Using cutting-edge optimization techniques and risk modeling, we help clients construct and manage resilient investment portfolios. Our research goes beyond traditional mean-variance analysis to incorporate factors such as tail risk, market regimes, and transaction costs.",
     color: "pink",
@@ -203,7 +203,7 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid justify-center gap-8 [grid-template-columns:repeat(auto-fit,minmax(280px,360px))]"
         >
           {services.map((service, index) => (
             <TiltCard key={index} service={service} index={index} />

@@ -43,7 +43,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 relative z-10">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
@@ -59,7 +59,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Pioneering the future of finance with AI and blockchain. 
+              {/* Pioneering the future of finance with AI.  */}
               Institutional-grade research and technology at the intersection 
               of artificial intelligence and quantitative finance.
             </p>
@@ -91,25 +91,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Company Links */}
-          <div>
-            <h3 className="text-white font-bold mb-4">Company</h3>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-cyan-400 transition-colors text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Services Links */}
-          <div>
+          {/* <div>
             <h3 className="text-white font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               {footerLinks.services.map((link, index) => (
@@ -123,10 +106,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Resources Links */}
-          <div>
+          {/* <div>
             <h3 className="text-white font-bold mb-4">Resources</h3>
             <ul className="space-y-2">
               {footerLinks.resources.map((link, index) => (
@@ -140,7 +123,24 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
+
+          {/* Company Links */}
+          <div className="lg:ml-auto">
+            <h3 className="text-white font-bold mb-4">Company</h3>
+            <ul className="space-y-2 text-right lg:text-left">
+              {footerLinks.company.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-cyan-400 transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            </div>
         </div>
 
         {/* Newsletter Signup */}

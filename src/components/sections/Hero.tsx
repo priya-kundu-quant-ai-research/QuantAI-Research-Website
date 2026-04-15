@@ -57,7 +57,7 @@ export default function Hero() {
             {/* Tagline */}
             <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed">
               Quant AI Research delivers institutional-grade research and technology 
-              at the intersection of artificial intelligence, blockchain, and quantitative 
+              at the intersection of artificial intelligence, and quantitative 
               finance. We empower our clients to navigate the complexities of modern 
               markets with data-driven insights and innovative solutions.
             </p>
